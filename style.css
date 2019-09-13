@@ -16,16 +16,20 @@ header {
     width: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     cursor: pointer;
     margin: 10px;
+    align-items: center;
 }
 
 nav {
     background-color: black;
-    /* display: flex;
-    justify-content: space-evenly; */
-    display: none;
+    display: flex;
+    justify-content: space-evenly; 
+    transform: translateX(-100%);
+    transition: .8s ease-out;
+    position: relative;
+    z-index: -1;
 }
 
 nav a {
@@ -39,8 +43,25 @@ span {
     height: 3px;
     width: 100%;
     display: block;
+    transition: .6s;
+}
+
+.traco-1, .traco-3 {
+    transform-origin: right center;
+}
+
+.ativo .traco-1{
+    transform: rotate(-45deg);
+}
+
+.ativo .traco-2{
+    opacity: 0;
+}
+
+.ativo .traco-3{
+    transform: rotate(45deg);   
 }
 
 .visivel {
-    display: block;
+    transform: translateX(0);
 }

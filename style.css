@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: beige;
+}
+
+header {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-hamburguer {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin: 10px;
+}
+
+nav {
+    background-color: black;
+    /* display: flex;
+    justify-content: space-evenly; */
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: red;
+    font-family: sans-serif;
+}
+
+span {
+   background-color: white;
+    height: 3px;
+    width: 100%;
+    display: block;
+}
+
+.visivel {
+    display: block;
+}
